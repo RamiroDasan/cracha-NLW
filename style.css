@@ -6,6 +6,7 @@ html,
 body {
   --black: hsl(240, 6%, 13%);
   --grey: hsl(240, 9%, 89%);
+  --blue: rgba(8, 4, 238, 0.466);
 
   height: 100%;
   font-family: 'Roboto', sans-serif;
@@ -17,10 +18,12 @@ body {
   place-items: center;
 }
 
-main {
-  background: url(images/background.svg);
-  width: 375px;
-  height: 812px;
+body {
+  background: url(images/Desktop.png) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+  vertical-align: top;
 }
 
 .container {
@@ -34,15 +37,16 @@ main {
 
 .avatar {
   width: 10rem;
-  margin: 11.5rem auto 0;
-
+  margin: 3.5rem auto 0;
   position: relative;
+  filter: drop-shadow(0 4px 4px rgba(8, 4, 238, 0.466));
 }
 
 .avatar span {
   position: absolute;
   top: -15px;
   z-index: 1;
+  animation: spin 3s linear;
 }
 
 .avatar > img {
@@ -51,6 +55,9 @@ main {
   object-fit: cover;
 
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 
 h1 {
@@ -86,4 +93,38 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+  filter: drop-shadow(0 4px 4px rgba(8, 4, 238, 0.466));
+}
+li {
+  transition: all 0.2s;
+}
+
+li:hover {
+  transform: translateY(-0.25em);
+}
+
+ul li a {
+  transition: 0.3s;
+}
+ul li a:hover {
+  transform: translateY(-9px);
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 10%;
+
+    width: 0%;
+  }
+
+  to {
+    margin-top: 0%;
+
+    width: 100%;
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
+  }
 }
