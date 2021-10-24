@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="pt_BR">
   <head>
     <meta charset="UTF-8" />
@@ -8,7 +7,6 @@
     <title>Ramiro Dasan - DoWhile 2021</title>
 
     <link rel="stylesheet" href="style.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -17,6 +15,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <main>
       <div class="container">
@@ -65,13 +64,30 @@
             </li>
           </ul>
         </div>
+        <img
+          id="desktopBg"
+          src="images/Desktop.png"
+          alt=""
+          width="1440"
+          height="920"
+        />
+      </div>
+      <div class="BgVideo">
+        <video
+          autoplay
+          loop
+          src="video/Blue Lights - HD Video Background Loop.mp4"
+          type="video/mp4"
+          width="1920"
+          height="1080"
+        ></video>
       </div>
     </main>
 
     <script src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
     <script>
-      VanillaTilt.init(document.querySelector('.avatar'), {
+      VanillaTilt.init(document.querySelector('.container'), {
         reverse: true,
         max: 3,
         scale: 1.1,
