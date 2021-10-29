@@ -31,17 +31,18 @@ body {
 
   .container {
     max-width: 250px;
-    margin-left: 0.55rem;
+    margin-left: 0.6rem;
     margin: center;
     text-align: center;
     padding: 0;
-
     color: var(--grey);
   }
 
   .avatar {
     width: 10rem;
-    margin: 10.8rem auto 0;
+    margin: auto;
+    margin-top: 10.9rem;
+    margin-right: 10.5rem;
     position: relative;
     filter: drop-shadow(0 4px 4px rgba(8, 4, 238, 0.466));
   }
@@ -85,7 +86,11 @@ body {
 
   p {
     margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     font-size: 0.75rem;
+    text-align: center;
+    justify-content: center;
   }
 
   ul {
@@ -159,9 +164,11 @@ body {
 
   .container {
     max-width: 250px;
-    margin-left: 0.55rem;
+    margin-left: 0.6rem;
+
     margin: center;
     text-align: center;
+    justify-content: center;
     padding: 0;
 
     color: var(--grey);
@@ -171,6 +178,7 @@ body {
     width: 10rem;
     margin: 13rem auto 0;
     margin-left: 5.16rem;
+    margin-top: 13.2rem;
     position: relative;
     filter: drop-shadow(0 4px 4px rgba(8, 4, 238, 0.466));
   }
